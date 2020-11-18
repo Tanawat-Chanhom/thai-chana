@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import detail from "./pages/detail/detail";
+import agreement from  "./pages/agreement/agreement"
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/register/detail" component={detail}></Route>
+          <Route exact path="/register/agreement" component={agreement}></Route>
         </Switch>
       </Router>
     </div>
