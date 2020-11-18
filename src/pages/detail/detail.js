@@ -6,6 +6,7 @@ import data from "../../assets/JSON/Data.json";
 import gg from "../../assets/images/citizencard.svg";
 import { Helmet } from "react-helmet";
 import axios from "axios";
+import Swal from "sweetalert2";
 
 export default class detail extends Component {
   constructor() {
@@ -19,6 +20,10 @@ export default class detail extends Component {
       subDistrictList: [],
       districtId: "",
       provinceId: "",
+      mapIsShow: false,
+      latitude: null,
+      longitude: null,
+      onlyShow: "day-mounth-year",
     };
   }
 
@@ -51,6 +56,37 @@ export default class detail extends Component {
   };
 
   render() {
+    if (this.state.mapIsShow === true) {
+      Swal.fire({
+        title: "<strong>HTML <u>example</u></strong>",
+        icon: "info",
+        html:
+          "You can use <b>bold text</b>, " +
+          '<a href="//sweetalert2.github.io">links</a> ' +
+          "and other HTML tags",
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        cancelButtonText: "ปิด",
+        confirmButtonText: "ยืนยันตำแหน่ง",
+        reverseButtons: true,
+      });
+    }
+
+    let year = [];
+    for (let index = 2545; index > 2445; index--) {
+      year.push(index);
+    }
+    let mounth = [];
+    for (let index = 1; index < 13; index++) {
+      mounth.push(index);
+    }
+
+    let day = [];
+    for (let index = 1; index < 32; index++) {
+      day.push(index);
+    }
+
     return (
       <div className={styles.container}>
         <Helmet>
@@ -362,7 +398,7 @@ export default class detail extends Component {
                             as="select"
                             custom
                             className={styles.textMuted}
-                            // disabled
+                            disabled
                             onChange={(e) => {
                               this.setState({
                                 provinceId: e.target.value,
@@ -402,7 +438,7 @@ export default class detail extends Component {
                             as="select"
                             custom
                             className={styles.textMuted}
-                            // disabled
+                            disabled
                           >
                             {this.state.districtId !== "" ? (
                               <>
@@ -450,6 +486,15 @@ export default class detail extends Component {
                           <Button
                             variant="outline-primary"
                             className="btn btn-block btn-outline-primary"
+                            onClick={() => {
+                              navigator.geolocation.getCurrentPosition((e) => {
+                                this.setState({
+                                  latitude: e.coords.latitude,
+                                  longitude: e.coords.longitude,
+                                  // mapIsShow: true,
+                                });
+                              });
+                            }}
                           >
                             <svg
                               _ngcontent-yxb-c50=""
@@ -487,6 +532,7 @@ export default class detail extends Component {
                             appvalidation
                             disabled
                             placeholder="ละติจูด"
+                            value={this.state.latitude}
                           />
                         </Form.Group>
                       </div>
@@ -501,6 +547,7 @@ export default class detail extends Component {
                             appvalidation
                             disabled
                             placeholder="ลองจิจูด"
+                            value={this.state.longitude}
                           />
                         </Form.Group>
                       </div>
@@ -698,25 +745,37 @@ export default class detail extends Component {
                       <div className="col-lg-12">
                         <div className="row">
                           <div className="col-lg-12">
-                            <Form.Group className="row mx-0">
+                            <Form.Group
+                              className="row mx-0"
+                              onChange={(e) => {
+                                console.log(e.target.id);
+                                this.setState({
+                                  onlyShow: e.target.id,
+                                });
+                              }}
+                            >
                               <Form.Check
                                 custom
                                 type="radio"
-                                id="custom-radio"
+                                id="day-mounth-year"
+                                name="data-ggth"
                                 label="มีวัน/เดือน/ปีเกิด"
+                                defaultChecked
                                 style={{ marginRight: "1rem" }}
                               />
                               <Form.Check
                                 custom
                                 type="radio"
-                                id="custom-radio"
+                                id="mounth-year"
+                                name="data-ggth"
                                 label="มีเฉพาะเดือนและปีเกิด"
                                 style={{ marginRight: "1rem" }}
                               />
                               <Form.Check
                                 custom
                                 type="radio"
-                                id="custom-radio"
+                                id="year"
+                                name="data-ggth"
                                 label="มีเฉพาะปีเกิด"
                               />
                             </Form.Group>
@@ -728,35 +787,57 @@ export default class detail extends Component {
                               <Form.Label>ปี:</Form.Label>
                               <Form.Control as="select" custom>
                                 <option>โปรดเลือก</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                {year.map((data) => {
+                                  return <option>{data}</option>;
+                                })}
                               </Form.Control>
                             </Form.Group>
                           </div>
                           <div className="col-lg-4 col-md-12">
                             <Form.Group className="m-lg-0">
-                              <Form.Label>เดือน:</Form.Label>
-                              <Form.Control as="select" custom>
-                                <option>โปรดเลือก</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </Form.Control>
+                              {this.state.onlyShow === "mounth-year" ? (
+                                <>
+                                  <Form.Label>เดือน:</Form.Label>
+                                  <Form.Control as="select" custom>
+                                    <option>โปรดเลือก</option>
+                                    {mounth.map((data) => {
+                                      return <option>{data}</option>;
+                                    })}
+                                  </Form.Control>
+                                </>
+                              ) : (
+                                <></>
+                              )}
+                              {this.state.onlyShow === "day-mounth-year" ? (
+                                <>
+                                  <Form.Label>เดือน:</Form.Label>
+                                  <Form.Control as="select" custom>
+                                    <option>โปรดเลือก</option>
+                                    {mounth.map((data) => {
+                                      return <option>{data}</option>;
+                                    })}
+                                  </Form.Control>
+                                </>
+                              ) : (
+                                <></>
+                              )}
                             </Form.Group>
                           </div>
                           <div className="col-lg-4 col-md-12">
                             <Form.Group className="m-lg-0">
-                              <Form.Label>วัน:</Form.Label>
-                              <Form.Control as="select" custom>
-                                <option>โปรดเลือก</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </Form.Control>
+                              {this.state.onlyShow === "day-mounth-year" ? (
+                                <>
+                                  <Form.Label>วัน:</Form.Label>
+                                  <Form.Control as="select" custom>
+                                    <option>โปรดเลือก</option>
+                                    {day.map((data) => {
+                                      return <option>{data}</option>;
+                                    })}
+                                  </Form.Control>
+                                </>
+                              ) : (
+                                <></>
+                              )}
                             </Form.Group>
                           </div>
                         </Form.Group>
@@ -796,16 +877,25 @@ export default class detail extends Component {
                     </div>
                   </div>
                   <div className="card-footer text-right bg-white">
-                    <Button variant="btn-link" className="btn mx-2">
-                      ยกเลิก
-                    </Button>
+                    <a href="/register/terms-conditions">
+                      <Button variant="btn-link" className="btn mx-2">
+                        ยกเลิก
+                      </Button>
+                    </a>
+                    {/* <a href="www.google.com"> */}
                     <Button
-                      type="submit"
+                      // type="bu"
                       variant=" btn-primary"
                       className="btn mx-2"
+                      onClick={() => {
+                        window.location.replace(
+                          "https://applied2020.thaichana.com/register/detail"
+                        );
+                      }}
                     >
                       ดำเนินการต่อ
                     </Button>
+                    {/* </a> */}
                   </div>
                 </div>
               </div>

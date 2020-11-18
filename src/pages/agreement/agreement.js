@@ -170,28 +170,30 @@ export default class agreement extends Component {
                     }}
                   />
                 </div>
-                <Button
-                  variant="primary"
-                  className="btn btn-block btn-lg"
-                  style={{ backgroundColor: "#235e95" }}
-                  onClick={() => {
-                    if (this.state.pass === false) {
-                      Swal.fire({
-                        text: "กรุณาคลิกในช่องสี่เหลี่ยม ก่อนกดยืนยัน",
-                        icon: "warning",
-                        confirmButtonColor: "#2e78be",
-                        confirmButtonText: "ตกลง",
-                      });
-                    } else {
-                      this.setState({
-                        path: "/register/detail",
-                      });
-                    }
-                  }}
-                >
-                  {" "}
-                  ยืนยัน{" "}
-                </Button>
+                <a href="/register/detail">
+                  <Button
+                    variant="primary"
+                    className="btn btn-block btn-lg"
+                    style={{ backgroundColor: "#235e95" }}
+                    onClick={() => {
+                      if (this.state.pass === false) {
+                        Swal.fire({
+                          text: "กรุณาคลิกในช่องสี่เหลี่ยม ก่อนกดยืนยัน",
+                          icon: "warning",
+                          confirmButtonColor: "#2e78be",
+                          confirmButtonText: "ตกลง",
+                        });
+                      } else {
+                        // this.setState({
+                        //   path: "/register/detail",
+                        // });
+                      }
+                    }}
+                  >
+                    {" "}
+                    ยืนยัน{" "}
+                  </Button>
+                </a>
                 <a
                   href="https://www.xn--b3czh8ayeuf.com/"
                   className="btn btn-block btn-lg btn-link mt-2"
