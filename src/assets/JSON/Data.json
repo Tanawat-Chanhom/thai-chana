@@ -1,0 +1,952 @@
+{
+  "headerResp": {
+    "reqID": "1605685162178IAouU",
+    "reqDtm": "2020-11-18 14:39:22.178",
+    "txnRefID": "20201118143922de86a88d352",
+    "service": "inquiryGroupMenu",
+    "statusCd": "00000",
+    "statusDesc": "Success",
+    "reqBy": "guest",
+    "reqChannel": "THStopWeb"
+  },
+  "dataResp": {
+    "groupList": [
+      {
+        "groupCode": "1",
+        "groupName": "กลุ่มที่ 1 : ผ่อนปรนให้เปิดทำการภายใต้มาตรฐานสาธารณสุข เริ่มวันที่ 3 พฤษภาคม 63",
+        "qrFlag": "Y",
+        "numAppDay": null,
+        "cat": [
+          {
+            "catCode": "ECONOMICS",
+            "catName": "กิจกรรมด้านเศรษฐกิจและการดำเนินชีวิต",
+            "subCat": [
+              {
+                "subCatCode": "01_ECONOMICS_01",
+                "subCatName": "หมวด ก การจำหน่ายอาหารหรือ เครื่องดื่ม ในโรงแรม ท่าอากาศยาน สถานีรถไฟ สถานีขนส่ง โรงพยาบาล ร้านอาหาร หรือเครื่องดื่ม ร้านสะดวกซื้อ รถเข็น หาบเร่ แผงลอย ซึ่งไม่รวมถึง สถานบริการ ผับ บาร์",
+                "businessType": [
+                  {
+                    "businessTypeCode": "01_ECONOMICS_01_BS01",
+                    "businessTypeName": "ร้านจำหน่ายอาหาร"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_01_BS02",
+                    "businessTypeName": "ร้านจำหน่ายเครื่องดื่ม"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_01_BS03",
+                    "businessTypeName": "ร้านสะดวกซื้อ"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_01_BS04",
+                    "businessTypeName": "รถเข็น"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_01_BS05",
+                    "businessTypeName": "หาบเร่"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_01_BS06",
+                    "businessTypeName": "แผงลอย"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_01_BS07",
+                    "businessTypeName": "ร้านอาหารและเครื่องดื่มในบริการขนส่ง (เช่น สนามบิน, ปั๊มน้ำมัน)"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_01_BS08",
+                    "businessTypeName": "ร้านสะดวกซื้อในบริการขนส่ง (เช่น สนามบิน, ปั๊มน้ำมัน)"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "01_ECONOMICS_02",
+                "subCatName": "หมวด ข ห้างสรรพสินค้าและ ศูนย์การค้า คอมมูนิตี้มอลล์ ให้เปิดได้เฉพาะซุปเปอร์มาร์เก็ต ร้านขายยา สินค้าเบ็ดเตล็ดที่จำเป็น ต่อการใช้ชีวิต และร้านขายปลีก ธุรกิจสื่อสารโทรคมนาคม ธนาคาร ที่ทำการหน่วยงาน ของรัฐและรัฐวิสาหกิจเท่านั้น ส่วนแผนกร้านอาหารให้เปิด เฉพาะการนำกลับไปบริโภคที่อื่น",
+                "businessType": [
+                  {
+                    "businessTypeCode": "01_ECONOMICS_02_BS01",
+                    "businessTypeName": "ซุปเปอร์มาร์เก็ต"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_02_BS02",
+                    "businessTypeName": "ร้านขายยา"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_02_BS03",
+                    "businessTypeName": "สินค้าเบ็ดเตล็ดที่จำเป็นต่อการใช้ชีวิต"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_02_BS04",
+                    "businessTypeName": "ร้านขายปลีกธุรกิจสื่อสารโทรคมนาคม"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_02_BS05",
+                    "businessTypeName": "ธนาคาร"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_02_BS06",
+                    "businessTypeName": "ที่ทำการหน่วยงานของรัฐและรัฐวิสาหกิจ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "01_ECONOMICS_03",
+                "subCatName": "หมวด ค ร้านค้าปลีก/ค้าส่งขนาดย่อม ร้านค้าปลีก/ค้าส่งชุมชน ตลาด ตลาดน้ำ และตลาดนัด",
+                "businessType": [
+                  {
+                    "businessTypeCode": "01_ECONOMICS_03_BS01",
+                    "businessTypeName": "ร้านค้าปลีก"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_03_BS02",
+                    "businessTypeName": "ร้านค้าส่งขนาดย่อม"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_03_BS03",
+                    "businessTypeName": "ร้านค้าปลีก/ค้าส่งชุมชน"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_03_BS04",
+                    "businessTypeName": "ตลาด"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_03_BS05",
+                    "businessTypeName": "ตลาดนัด"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_03_BS06",
+                    "businessTypeName": "ตลาดน้ำ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "01_ECONOMICS_04",
+                "subCatName": "หมวด ง ร้านเสริมสวย แต่งผม หรือ ตัดผม สำหรับบุรุษหรือสตรี (เฉพาะสระ ตัด ซอยผม แต่งผม)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "01_ECONOMICS_04_BS01",
+                    "businessTypeName": "ร้านเสริมสวย"
+                  },
+                  {
+                    "businessTypeCode": "01_ECONOMICS_04_BS02",
+                    "businessTypeName": "ร้านตัดผม สำหรับบุรุษหรือสตรี (เฉพาะสระ ตัด ซอยผม แต่งผม)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "catCode": "HEALTHCARE",
+            "catName": "กิจกรรมด้านการออกกำลังกายหรือการดูแลสุขภาพ",
+            "subCat": [
+              {
+                "subCatCode": "02_HEALTHCARE_01",
+                "subCatName": "หมวด ก สนามกอลฟ์หรือสนามฝึกซ้อมกอล์ฟ",
+                "businessType": [
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_01_BS01",
+                    "businessTypeName": "สนามกอล์ฟ"
+                  },
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_01_BS02",
+                    "businessTypeName": "สนามฝึกซ้อมกอล์ฟ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "02_HEALTHCARE_02",
+                "subCatName": "หมวด ข สนามกีฬาเฉพาะกีฬาประเภทกลางแจ้ง และตามกติกาสากล ได้แก่ เทนนิส ขี่ม้า ยิงปืน ยิงธนู",
+                "businessType": [
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_02_BS01",
+                    "businessTypeName": "สนามเทนนิส"
+                  },
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_02_BS02",
+                    "businessTypeName": "สนามขี่ม้า"
+                  },
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_02_BS03",
+                    "businessTypeName": "สนามยิงปืน"
+                  },
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_02_BS04",
+                    "businessTypeName": "สนามยิงธนู"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "02_HEALTHCARE_03",
+                "subCatName": "หมวด ค สวนสาธารณะ ลาน-พื้นที่ กิจกรรมสาธารณะ สถานที่ออกกำลังกาย สนามกีฬา ลานกีฬา (เฉพาะพื้นที่โล่งแจ้ง เพื่อการเดิน วิ่ง ขี่หรือปั่นจักรยาน หรือการออกกำลังกายด้วยวิธีอื่นเป็นส่วนบุคคล)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_03_BS01",
+                    "businessTypeName": "สวนสาธารณะ"
+                  },
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_03_BS02",
+                    "businessTypeName": "ลานพื้นที่กิจกรรมสาธารณะ"
+                  },
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_03_BS03",
+                    "businessTypeName": "สถานที่ออกกำลังกาย"
+                  },
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_03_BS04",
+                    "businessTypeName": "สนามกีฬา"
+                  },
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_03_BS05",
+                    "businessTypeName": "ลานกีฬา"
+                  },
+                  {
+                    "businessTypeCode": "02_HEALTHCARE_03_BS06",
+                    "businessTypeName": "สนามปั่นจักรยาน"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "catCode": "Other",
+            "catName": "กิจกรรมอื่น ๆ",
+            "subCat": [
+              {
+                "subCatCode": "05_OTHER_01",
+                "subCatName": "หมวด ง สถานที่ให้บริการดูแลรักษา สัตว์ สปา อาบน้ำ ตัดขน รับเลี้ยง หรือรับฝากสัตว์",
+                "businessType": [
+                  {
+                    "businessTypeCode": "05_OTHER_01_BS01",
+                    "businessTypeName": "สถานที่ให้บริการดูแลรักษาสัตว์ สปา อาบน้ำ ตัดขน สัตว์เลี้ยง"
+                  },
+                  {
+                    "businessTypeCode": "05_OTHER_01_BS02",
+                    "businessTypeName": "สถานที่ให้บริการรับฝากสัตว์เลี้ยง"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "groupCode": "4",
+        "groupName": "กลุ่มที่ 2 : ผ่อนปรนให้เปิดทำการภายใต้มาตรฐานสาธารณสุข เริ่มวันที่ 17 พฤษภาคม 63",
+        "qrFlag": "Y",
+        "numAppDay": null,
+        "cat": [
+          {
+            "catCode": "ECONOMICS_G4",
+            "catName": "กิจกรรมด้านเศรษฐกิจและการดำเนินชีวิต",
+            "subCat": [
+              {
+                "subCatCode": "06_ECONOMICS_G4_01",
+                "subCatName": "หมวด ก การจำหน่ายอาหารหรือเครื่องดื่มในภัตตาคาร สวนอาหาร ศูนย์อาหาร โรงอาหาร ร้านอาหารหรือเครื่องดื่มทั่วไป ซึ่งไม่รวมสถานบริการ ผับ บาร์ ",
+                "businessType": [
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_01_BS01",
+                    "businessTypeName": "ภัตตาคาร"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_01_BS02",
+                    "businessTypeName": "สวนอาหาร"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_01_BS03",
+                    "businessTypeName": "ศูนย์อาหาร"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_01_BS04",
+                    "businessTypeName": "โรงอาหาร"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "06_ECONOMICS_G4_02",
+                "subCatName": "หมวด ข กิจกรรม/กิจการในห้างสรรพสินค้าศูนย์การค้าและคอมมูนิตี้มอลล์",
+                "businessType": [
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_02_BS01",
+                    "businessTypeName": "ห้างสรรพสินค้า"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_02_BS02",
+                    "businessTypeName": "ศูนย์การค้า"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_02_BS03",
+                    "businessTypeName": "คอมมูนิตี้มอลล์"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_02_BS04",
+                    "businessTypeName": "การจำหน่ายสินค้าเพื่อการอุปโภคบริโภค"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_02_BS05",
+                    "businessTypeName": "การให้บริการ"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_02_BS06",
+                    "businessTypeName": "ร้านอาหารหรือเครื่องดื่ม"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_02_BS07",
+                    "businessTypeName": "ร้านเสริมสวย แต่งผม ตัดผม หรือทำเล็บ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "06_ECONOMICS_G4_03",
+                "subCatName": "หมวด ค ร้านค้าปลีก/ค้าส่ง หรือตลาดค้าส่งขนาดใหญ่",
+                "businessType": [
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_03_BS01",
+                    "businessTypeName": "ร้านค้าปลีก/ค้าส่ง"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_03_BS02",
+                    "businessTypeName": "ตลาดค้าส่งสินค้าขนาดใหญ่"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "06_ECONOMICS_G4_04",
+                "subCatName": "หมวด ง สถานที่บริการดูแล สถานที่พำนักอาศัย หรือสถานสงเคราะห์อื่นที่จัดสวัสดิการให้แก่เด็กหรือผู้สูงอายุ หรือผู้มีภาระพึ่งพิง",
+                "businessType": [
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_04_BS01",
+                    "businessTypeName": "สถานที่บริการดูแล สถานที่พำนักอาศัย หรือสถานสงเคราะห์อื่นที่จัดสวัสดิการให้แก่เด็กหรือผู้สูงอายุ หรือผู้มีภาระพึ่งพิง"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "06_ECONOMICS_G4_05",
+                "subCatName": "หมวด จ การถ่ายทำรายการโทรทัศน์ ภาพยนตร์และวีดีทัศน์",
+                "businessType": [
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_05_BS01",
+                    "businessTypeName": "การถ่ายทำรายการโทรทัศน์ ภาพยนตร์และวีดีทัศน์"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "06_ECONOMICS_G4_06",
+                "subCatName": "หมวด ฉ ห้องประชุมในโรงแรมหรือศูนย์ประชุม",
+                "businessType": [
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_06_BS01",
+                    "businessTypeName": "ห้องประชุมในโรงแรม"
+                  },
+                  {
+                    "businessTypeCode": "06_ECONOMICS_G4_06_BS02",
+                    "businessTypeName": "ศูนย์ประชุม"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "catCode": "HEALTHCARE_G4",
+            "catName": "กิจกรรมด้านการออกกำลังกาย การดูแลสุขภาพ หรือสันทนาการ",
+            "subCat": [
+              {
+                "subCatCode": "07_HEALTHCARE_G4_01",
+                "subCatName": "หมวด ก คลินิกเวชกรรมเสริมความงาม สถานเสริมความงาม และร้านทำเล็บ (เปิดดำเนินการได้เฉพาะการเสริมความงามเรือนร่างและผิวพรรณ ไม่รวมถึงการเสริมความงามบริเวณใบหน้า)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_01_BS01",
+                    "businessTypeName": "คลีนิกเวชกรรมเสริมความงาม"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_01_BS02",
+                    "businessTypeName": "สถานเสริมความงาม"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_01_BS03",
+                    "businessTypeName": "ร้านทำเล็บ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "07_HEALTHCARE_G4_02",
+                "subCatName": "หมวด ข สถานออกกำลังกายฟิตเนสที่มิได้ตั้งอยู่ในห้างสรรพสินค้า ศูนย์การค้า หรือคอมมูนิตี้มอลล์ (เปิดดำเนินการได้เฉพาะส่วนที่เป็นการเล่นโยคะหรือฟรีเวท โดยงดเว้นการใช้เครื่องเล่น เครื่องลู่วิ่ง จักรยานปั่น หรือการเล่นแบบรวมกลุ่ม) ",
+                "businessType": [
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_02_BS01",
+                    "businessTypeName": "ฟิตเนส"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_02_BS02",
+                    "businessTypeName": "สถานออกกำลังกายอื่นๆ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "07_HEALTHCARE_G4_03",
+                "subCatName": "หมวด ค สถานที่หรือสนามออกกำลังกายในร่ม เฉพาะกีฬาประเภทที่ตามกติกาสากลมิได้มีการปะทะกันระหว่างผู้เล่นและต้องไม่มีผู้ชมการแข่งขัน",
+                "businessType": [
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_03_BS01",
+                    "businessTypeName": "สนามแบดมินตัน"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_03_BS02",
+                    "businessTypeName": "สนามตะกร้อ"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_03_BS03",
+                    "businessTypeName": "สนามเทเบิลเทนนิส"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_03_BS04",
+                    "businessTypeName": "สนามสควอช"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_03_BS05",
+                    "businessTypeName": "สนามยิมนาสติก"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_03_BS06",
+                    "businessTypeName": "สนามฟันดาบ"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_03_BS07",
+                    "businessTypeName": "สนามปีนผา"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "07_HEALTHCARE_G4_04",
+                "subCatName": "หมวด ง สระว่ายน้ำสาธารณะทั้งกลางแจ้งและในร่ม",
+                "businessType": [
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_04_BS01",
+                    "businessTypeName": "สระว่ายน้ำกลางแจ้ง"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_04_BS02",
+                    "businessTypeName": "สระว่ายน้ำในร่ม"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "07_HEALTHCARE_G4_05",
+                "subCatName": "หมวด จ สวนพฤกษศาสตร์ สวนดอกไม้ พิพิธภัณฑ์ ศูนย์การเรียนรู้ แหล่งประวัติศาสตร์ โบราณสถาน ห้องสมุดสาธารณะ หอศิลป์",
+                "businessType": [
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_05_BS01",
+                    "businessTypeName": "สวนพฤกษศาสตร์ สวนดอกไม้"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_05_BS02",
+                    "businessTypeName": "พิพิธภัณฑ์ ศูนย์การเรียนรู้"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_05_BS03",
+                    "businessTypeName": "แหล่งประวัติศาสตร์ โบราณสถาน"
+                  },
+                  {
+                    "businessTypeCode": "07_HEALTHCARE_G4_05_BS04",
+                    "businessTypeName": "ห้องสมุดสาธารณะ หอศิลป์"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "groupCode": "6",
+        "groupName": "กลุ่มที่ 3 : ผ่อนปรนให้เปิดทำการภายใต้มาตรฐานสาธารณสุข เริ่มวันที่ 1 มิถุนายน 63",
+        "qrFlag": "Y",
+        "numAppDay": null,
+        "cat": [
+          {
+            "catCode": "EDUCATION_G6",
+            "catName": "การผ่อนผันการใช้อาคารสถานที่ของโรงเรียน หรือสถาบันการศึกษา",
+            "subCat": [
+              {
+                "subCatCode": "10_EDUCATION_G6_01",
+                "subCatName": "หมวด ก โรงเรียน หรือสถาบันการศึกษา",
+                "businessType": [
+                  {
+                    "businessTypeCode": "10_EDUCATION_G6_01_BS01",
+                    "businessTypeName": "โรงเรียน หรือสถาบันการศึกษา"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "catCode": "ECONOMICS_G6",
+            "catName": "กิจกรรมด้านเศรษฐกิจและการดำเนินชีวิต",
+            "subCat": [
+              {
+                "subCatCode": "11_ECONOMICS_G6_01",
+                "subCatName": "หมวด ข ศูนย์แสดงสินค้า ศูนย์ประชุม หรือสถานที่จัดนิทรรศการ (ให้จำกัดพื้นที่รวมในการจัดงานขนาดพื้นที่ไม่เกิน 20,000 ตารางเมตร และเปิดดำเนินการได้จนถึงเวลา 21.00 น.)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "11_ECONOMICS_G6_01_BS01",
+                    "businessTypeName": "ศูนย์แสดงสินค้า ศูนย์ประชุม หรือสถานที่จัดนิทรรศการ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "11_ECONOMICS_G6_02",
+                "subCatName": "หมวด ค สนามพระเครื่อง ศูนย์พระเครื่อง (งดเว้นการจัดกิจกรรมที่เปิดโอกาสให้ผู้คนมาชุมนุมกันหนาแน่นและอาจเกิดภาวะไร้ระเบียบได้)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "11_ECONOMICS_G6_02_BS01",
+                    "businessTypeName": "สนามพระเครื่อง ศูนย์พระเครื่อง"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "11_ECONOMICS_G6_03",
+                "subCatName": "หมวด จ ศูนย์พัฒนาเด็กเล็ก เด็กก่อนวัยเรียน (ให้เปิดได้เฉพาะเพื่อการปฏิบัติงานที่จำเป็นของเจ้าหน้าที่ในการนัดหมาย จัดสรร และแจกจ่ายเครื่องดื่มและอาหารกลางวัน และการจัดเตรียมความพร้อมของสถานที่ให้เป็นไปตามมาตรการป้องกันโรคที่ทางราชการกำหนด)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "11_ECONOMICS_G6_03_BS01",
+                    "businessTypeName": "ศูนย์พัฒนาเด็กเล็ก เด็กก่อนวัยเรียน"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "catCode": "HEALTHCARE_G6",
+            "catName": "กิจกรรมด้านการออกกำลังกาย การดูแลสุขภาพ หรือสันทนาการ",
+            "subCat": [
+              {
+                "subCatCode": "12_HEALTHCARE_G6_01",
+                "subCatName": "หมวด ก คลีนิคเวชกรรมเสริมความงาม สถานเสริมความงาม สถานบริการสักผิวหนัง เจาะผิวหนัง เจาะส่วนใดส่วนหนึ่งของร่างกาย",
+                "businessType": [
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_01_BS01",
+                    "businessTypeName": "สถานบริการสักผิวหนัง เจาะผิวหนัง เจาะส่วนใดส่วนหนึ่งของร่างกาย"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "12_HEALTHCARE_G6_02",
+                "subCatName": "หมวด ข สถานประกอบการเพื่อสุขภาพ สปา และสถานประกอบการนวดแผนไทย (งดเว้นการอบตัว อบสมุนไพรหรืออบไอน้ำแบบรวมและการนวดบริเวณใบหน้า) นวดฝ่าเท้า\"",
+                "businessType": [
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_02_BS01",
+                    "businessTypeName": "สถานประกอบการนวดเพื่อสุขภาพ"
+                  },
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_02_BS02",
+                    "businessTypeName": "นวดแผนไทย"
+                  },
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_02_BS03",
+                    "businessTypeName": "นวดฝ่าเท้า"
+                  },
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_02_BS04",
+                    "businessTypeName": "สปา"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "12_HEALTHCARE_G6_03",
+                "subCatName": "หมวด ง สถานที่ฝึกซ้อมมวย โรงยิมหรือค่ายมวย (ให้เปิดได้เฉพาะเพื่อการฝึกซ้อมการชกลม โดยไม่มีคู่ชก การชกมวยแบบล่อเป้า โดยต้องไม่เป็นการแข่งขันและไม่มีผู้ชม)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_03_BS01",
+                    "businessTypeName": "สถานที่ฝึกซ้อมมวย โรงยิมหรือค่ายมวย"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "12_HEALTHCARE_G6_04",
+                "subCatName": "หมวด จ สนามกีฬา (ต้องไม่เป็นการแข่งขันและมีจำนวนผู้ร่วมกิจกรรมที่อยู่ในบริเวณสนามกีฬา (ไม่นับรวมผู้เล่น) อีกไม่เกิน 10 คน)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_04_BS01",
+                    "businessTypeName": "สนามฟุตบอล ฟุตซอล"
+                  },
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_04_BS02",
+                    "businessTypeName": "สนามบาสเกตบอล"
+                  },
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_04_BS03",
+                    "businessTypeName": "สนามวอลเล่ย์บอล"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "12_HEALTHCARE_G6_05",
+                "subCatName": "หมวด ฉ สถานที่เล่นโบว์ลิ่ง สเก็ตหรือโรลเลอร์เบลด หรือการละเล่นอื่นๆ ในทำนองเดียวกัน (ให้เปิดดำเนินการได้เฉพาะเพื่อการออกกำลังกายหรือการฝึกซ้อม)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_05_BS01",
+                    "businessTypeName": "สนามโบว์ลิ่ง"
+                  },
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_05_BS02",
+                    "businessTypeName": "สนามสเก็ต โรลเลอร์เบรด"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "12_HEALTHCARE_G6_06",
+                "subCatName": "หมวด ช สถาบันลีลาศหรือสอนลีลาศ",
+                "businessType": [
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_06_BS01",
+                    "businessTypeName": "สถาบันลีลาศหรือสอนลีลาศ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "12_HEALTHCARE_G6_07",
+                "subCatName": "หมวด ซ สระน้ำเพื่อการเล่นกีฬาหรือกิจกรรมทางน้ำ ในบึง (ให้เปิดดำเนินการได้โดยต้องไม่เป็นการแข่งขันและจำกัดจำนวนผู้เล่นตามจำนวนเครื่องเล่นและขนาดพื้นที่)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_07_BS01",
+                    "businessTypeName": "สระน้ำเพื่อการเล่นกีฬาหรือกิจกรรมทางน้ำ ในบึง เช่น เจ็ตสกี ไคท์เซิร์ฟ เครื่องเล่นประเภทบานาน่าโบ๊ต"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "12_HEALTHCARE_G6_08",
+                "subCatName": "หมวด ฌ โรงภาพยนตร์ โรงละคร โรงมหรสพ (ให้เปิดดำเนินการได้โดยจำกัดจำนวนผู้ร่วมกิจกรรมไม่เกิน 200 คน)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_08_BS01",
+                    "businessTypeName": "โรงภาพยนตร์"
+                  },
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_08_BS02",
+                    "businessTypeName": "โรงละคร"
+                  },
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_08_BS03",
+                    "businessTypeName": "โรงมหรสพ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "12_HEALTHCARE_G6_09",
+                "subCatName": "หมวด ญ สวนสัตว์หรือสถานที่จัดแสดงสัตว์ (ให้เปิดดำเนินการได้ โดยจำกัดจำนวนผู้ร่วมกิจกรรมในพื้นที่จัดการแสดงที่เป็นการรวมกลุ่ม)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_09_BS01",
+                    "businessTypeName": "สวนสัตว์ "
+                  },
+                  {
+                    "businessTypeCode": "12_HEALTHCARE_G6_09_BS02",
+                    "businessTypeName": "สถานที่จัดแสดงสัตว์"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "groupCode": "7",
+        "groupName": "กลุ่มที่ 4 : ผ่อนปรนให้เปิดทำการภายใต้มาตรฐานสาธารณสุข เริ่มวันที่ 15 มิถุนายน 63",
+        "qrFlag": "Y",
+        "numAppDay": null,
+        "cat": [
+          {
+            "catCode": "ECONOMICS_G7",
+            "catName": "กิจกรรมด้านเศรษฐกิจและการดำเนินชีวิต",
+            "subCat": [
+              {
+                "subCatCode": "13_ECONOMICS_G7_01",
+                "subCatName": "หมวด ง ศูนย์วิทยาศาสตร์เพื่อการศึกษาอุทยานวิทยาศาสตร์ ศูนย์วิทยาศาสตร์และวัฒนธรรม",
+                "businessType": [
+                  {
+                    "businessTypeCode": "13_ECONOMICS_G7_01_BS01",
+                    "businessTypeName": "ศูนย์วิทยาศาสตร์เพื่อการศึกษาอุทยานวิทยาศาสตร์"
+                  },
+                  {
+                    "businessTypeCode": "13_ECONOMICS_G7_01_BS02",
+                    "businessTypeName": "ศูนย์วิทยาศาสตร์และวัฒนธรรม"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "catCode": "HEALTHCARE_G7",
+            "catName": "กิจกรรมด้านการออกกำลังกาย การดูแลสุขภาพ หรือสันทนาการ",
+            "subCat": [
+              {
+                "subCatCode": "14_HEALTHCARE_G7_01",
+                "subCatName": "หมวด ค สวนน้ำ สนามเด็กเล่น สวนสนุก (ยกเว้นการใช้เครื่องเล่นในลักษณะที่เป็นการติดตั้งชั่วคราวหรือเครื่องเล่นที่มีพื้นผิวสัมผัสมากซึ่งอาจมีความเสี่ยงต่อการติดโรคในเด็ก เช่น บ้านบอล บ้านลม)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "14_HEALTHCARE_G7_01_BS01",
+                    "businessTypeName": "สวนน้ำ"
+                  },
+                  {
+                    "businessTypeCode": "14_HEALTHCARE_G7_01_BS02",
+                    "businessTypeName": "สนามเด็กเล่น"
+                  },
+                  {
+                    "businessTypeCode": "14_HEALTHCARE_G7_01_BS03",
+                    "businessTypeName": "สวนสนุก"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "14_HEALTHCARE_G7_02",
+                "subCatName": "หมวด ง สนามกีฬาหรือสถานที่เพื่อการออกกำลังกาย การเล่นกีฬา หรือเพื่อการเรียนการสอนในทุกประเภทกีฬา (ให้เปิดดำเนินการได้ยกเว้นสนามชนโค สนามชนไก่ สนามกัดปลา หรือสนามการแข่งขันอื่นๆในลักษณะทำนองเดียวกันยังไม่อนุญาติให้เปิดดำเนินการ)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "14_HEALTHCARE_G7_02_BS01",
+                    "businessTypeName": "สนามกีฬา"
+                  },
+                  {
+                    "businessTypeCode": "14_HEALTHCARE_G7_02_BS02",
+                    "businessTypeName": "สนามที่เพื่อออกกำลังกาย"
+                  },
+                  {
+                    "businessTypeCode": "14_HEALTHCARE_G7_02_BS03",
+                    "businessTypeName": "สถานที่เพื่อการเรียนการสอนกีฬา"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "14_HEALTHCARE_G7_03",
+                "subCatName": "หมวด จ ตู้เกม เครื่องเล่นหยอดเหรียญที่ได้รับอนุญาตตามกฎหมายและตั้งอยู่ในห้างสรรพสินค้า ศูนย์การค้า คอมมูนิตี้มอลล์",
+                "businessType": [
+                  {
+                    "businessTypeCode": "14_HEALTHCARE_G7_03_BS01",
+                    "businessTypeName": "ตู้เกม เครื่องเล่นหยอดเหรียญ"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "groupCode": "8",
+        "groupName": "กลุ่มที่ 5 : ผ่อนปรนให้เปิดทำการภายใต้มาตรฐานสาธารณสุข เริ่มวันที่ 1 กรกฎาคม 63",
+        "qrFlag": "Y",
+        "numAppDay": null,
+        "cat": [
+          {
+            "catCode": "HEALTHCARE_G8",
+            "catName": "กิจกรรมด้านการออกกำลังกาย การดูแลสุขภาพ หรือสันทนาการ",
+            "subCat": [
+              {
+                "subCatCode": "15_HEALTHCARE_G8_01",
+                "subCatName": "หมวด ก สถานบริการ สถานประกอบการที่มีลักษณะคล้ายสถานบริการ ผับ บาร์ คาราโอเกะ (ผ่อนผันให้เปิดดำเนินการได้โดยเปิดทำการตามเวลาปกติที่กฎหมายกำหนดจนถึงเวลา 24.00 นาฬิกาของวันเดียวกันและงดเว้นการจัดกิจกรรมส่งเสริมการขาย)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "15_HEALTHCARE_G8_01_BS01",
+                    "businessTypeName": "ผับ บาร์ คาราโอเกะ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "15_HEALTHCARE_G8_02",
+                "subCatName": "หมวด ข ร้านเกมส์และร้านอินเทอร์เน็ต (ให้เปิดดำเนินการได้ โดยจำกัดช่วงเวลาการให้บริการ)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "15_HEALTHCARE_G8_02_BS01",
+                    "businessTypeName": "ร้านเกมส์ ร้านอินเทอร์เน็ต"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "15_HEALTHCARE_G8_03",
+                "subCatName": "หมวด ค สถานประกอบกิจการอาบ อบ นวด โรงน้ำชา (ให้เปิดดำเนินการได้ตามเวลาเปิดทำการปกติที่กฎหมายกำหนด)",
+                "businessType": [
+                  {
+                    "businessTypeCode": "15_HEALTHCARE_G8_03_BS01",
+                    "businessTypeName": "สถานบริการอาบ อบ นวด โรงน้ำชา"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "groupCode": "5",
+        "groupName": "กลุ่มทั่วไปที่มิได้ถูกกำหนดให้ปิดสถานที่ หรือ ยังคงให้เปิดสถานที่ทำการตามนโยบาย",
+        "qrFlag": "Y",
+        "numAppDay": null,
+        "cat": [
+          {
+            "catCode": "ECONOMICS_G5",
+            "catName": "กิจกรรมด้านเศรษฐกิจและการดำเนินชีวิต",
+            "subCat": [
+              {
+                "subCatCode": "08_ECONOMICS_G5_01",
+                "subCatName": "หมวด ก คมนาคมขนส่งสาธารณะ",
+                "businessType": [
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS01",
+                    "businessTypeName": "แท็กซี่"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS02",
+                    "businessTypeName": "จุดขึ้นวินมอเตอร์ไซค์"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS03",
+                    "businessTypeName": "รถสองแถว"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS04",
+                    "businessTypeName": "รถตู้รับจ้าง/รถโรงเรียน"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS05",
+                    "businessTypeName": "บขส. / รถทัวร์"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS06",
+                    "businessTypeName": "รถเมล์"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS07",
+                    "businessTypeName": "เรือด่วน/เรือโดยสาร"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS08",
+                    "businessTypeName": "รถไฟ/รถไฟฟ้า"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS09",
+                    "businessTypeName": "ปั๊มน้ำมัน"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS10",
+                    "businessTypeName": "จุดพักรถ"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_01_BS11",
+                    "businessTypeName": "สนามบิน"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "08_ECONOMICS_G5_02",
+                "subCatName": "หมวด ข ธุรกิจสื่อสาร พลังงาน สาธารณูปโภค",
+                "businessType": [
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_02_BS01",
+                    "businessTypeName": "การสื่อสาร"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_02_BS02",
+                    "businessTypeName": "ธุรกิจพลังงาน"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_02_BS03",
+                    "businessTypeName": "การประปา"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_02_BS04",
+                    "businessTypeName": "การไฟฟ้า"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "08_ECONOMICS_G5_03",
+                "subCatName": "หมวด ค ธนาคารและสถาบันการเงิน",
+                "businessType": [
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_03_BS01",
+                    "businessTypeName": "ธนาคาร"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_03_BS02",
+                    "businessTypeName": "สถาบันการเงิน"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "08_ECONOMICS_G5_04",
+                "subCatName": "หมวด ง หน่วยงานและสถานที่ราชการ",
+                "businessType": [
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_04_BS01",
+                    "businessTypeName": "หน่วยงานและสถานที่ราชการ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "08_ECONOMICS_G5_05",
+                "subCatName": "หมวด จ ธุรกิจที่พักโรงแรม และ สถานที่เกี่ยวเนื่องกับการท่องเที่ยว",
+                "businessType": [
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_05_BS01",
+                    "businessTypeName": "โรงแรม"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_05_BS02",
+                    "businessTypeName": "รีสอร์ท"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_05_BS03",
+                    "businessTypeName": "โฮมสเตย์"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_05_BS04",
+                    "businessTypeName": "โฮสเทล"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "08_ECONOMICS_G5_06",
+                "subCatName": "หมวด ช สถานที่ประกอบพิธีทางศาสนา",
+                "businessType": [
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_06_BS01",
+                    "businessTypeName": "วัด"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_06_BS02",
+                    "businessTypeName": "โบสถ์"
+                  },
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_06_BS03",
+                    "businessTypeName": "ศาสนสถาน อื่นๆ"
+                  }
+                ]
+              },
+              {
+                "subCatCode": "08_ECONOMICS_G5_07",
+                "subCatName": "หมวด ซ อาคารสำนักงานต่างๆ",
+                "businessType": [
+                  {
+                    "businessTypeCode": "08_ECONOMICS_G5_07_BS01",
+                    "businessTypeName": "อาคารสำนักงาน / ออฟฟิศ"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "catCode": "HEALTHCARE_G5",
+            "catName": "กิจกรรมด้านการออกกำลังกาย การดูแลสุขภาพ หรือสันทนาการ",
+            "subCat": [
+              {
+                "subCatCode": "09_HEALTHCARE_G5_01",
+                "subCatName": "หมวด ก บริการทางการแพทย์",
+                "businessType": [
+                  {
+                    "businessTypeCode": "09_HEALTHCARE_G5_01_BS01",
+                    "businessTypeName": "บริการทางการแพทย์"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="48" viewBox="0 0 70 48">
+  <defs>
+    <linearGradient id="citizencard-a" x1="50%" x2="50%" y1="0%" y2="96.812%">
+      <stop offset="0%" stop-color="#A0DFFA"/>
+      <stop offset="100%" stop-color="#C6ECFB"/>
+    </linearGradient>
+    <linearGradient id="citizencard-b" x1="0%" x2="99.948%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#C8EDFB"/>
+      <stop offset="99.948%" stop-color="#99DDFA"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="70" height="48" fill="url(#citizencard-a)" rx="7"/>
+    <path fill="url(#citizencard-b)" d="M0,25 L70,25 L70,41 C70,44.8659932 66.8659932,48 63,48 L7,48 C3.13400675,48 4.73447626e-16,44.8659932 0,41 L0,25 Z"/>
+    <rect width="20" height="5" x="28" y="20" fill="#7ECDEE"/>
+    <rect width="11" height="9" x="9" y="20" fill="#F2EAA9" rx="3"/>
+    <g transform="translate(56 21)">
+      <rect width="10" height="8" fill="#FFF"/>
+      <rect width="10" height="1.455" fill="#EF1C38"/>
+      <rect width="10" height="1.455" y="6.545" fill="#EF1C38"/>
+      <rect width="10" height="2.182" y="2.909" fill="#1A51B8"/>
+    </g>
+    <rect width="30" height="9" x="22" y="25" stroke="#F72020" stroke-width="2"/>
+    <rect width="23" height="2" x="25" y="28" fill="#8F8383"/>
+  </g>
+</svg>

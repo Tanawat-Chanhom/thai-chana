@@ -19,3 +19,23 @@
 .dropShadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.copy p {
+  color: #2b6cb0 !important;
+}
+
+/* .gg:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+} */
+
+OL {
+  counter-reset: item;
+}
+LI {
+  display: block;
+}
+LI:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
