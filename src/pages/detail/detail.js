@@ -4,6 +4,8 @@ import cx from "classnames";
 import { Form, Button, InputGroup } from "react-bootstrap";
 import data from "../../assets/JSON/Data.json";
 import gg from "../../assets/images/citizencard.svg";
+import { Helmet } from "react-helmet";
+import axios from "axios";
 
 export default class detail extends Component {
   constructor() {
@@ -12,13 +14,48 @@ export default class detail extends Component {
       activity: data.dataResp.groupList,
       cat: [],
       subCat: [],
+      districtList: [],
+      provinceList: [],
+      subDistrictList: [],
+      districtId: "",
+      provinceId: "",
     };
   }
 
+  getLocation = (value) => {
+    let body = {
+      bodyReq: {
+        zipCode: value,
+      },
+      headerReq: {
+        reqBy: "guest",
+        reqChannel: "THStopWeb",
+        reqDtm: "2020-11-18 21:50:03.116",
+        reqID: "1605711003116QHvyY",
+        service: "InquiryGeo",
+      },
+    };
+    axios
+      .post("https://applied2020.thaichana.com/api/inquiry/zipcode", body)
+      .then((res) => {
+        console.log(res);
+        this.setState({
+          districtList: res.data.dataResp.districtList,
+          provinceList: res.data.dataResp.provinceList,
+          subDistrictList: res.data.dataResp.subDistrictList,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   render() {
-    console.log(this.state.subCat);
     return (
       <div className={styles.container}>
+        <Helmet>
+          <title>ลงทะเบียนกิจกรรม/กิจการ/สถานประกอบการโครงการไทยชนะ</title>
+        </Helmet>
         <div className={styles.bar}></div>
         <div className="px-3 py-3 pt-md-5 mx-auto text-center">
           <h1
@@ -272,9 +309,16 @@ export default class detail extends Component {
                             รหัสไปรษณีย์<span className="text-danger"> *</span>
                           </Form.Label>
                           <Form.Control
-                            type="number"
+                            type="text"
                             appvalidation
                             placeholder="รหัสไปรษณีย์"
+                            mask="00000"
+                            maxLength="5"
+                            onChange={(event) => {
+                              if (event.target.value.length === 5) {
+                                this.getLocation(event.target.value);
+                              }
+                            }}
                           />
                         </Form.Group>
                       </div>
@@ -287,15 +331,20 @@ export default class detail extends Component {
                             as="select"
                             custom
                             className={styles.textMuted}
+                            onChange={(e) => {
+                              this.setState({
+                                districtId: e.target.value,
+                              });
+                            }}
                           >
                             <option value="โปรดเลือก">โปรดเลือก</option>
-                            {this.state.subCat.map((data) => {
+                            {this.state.subDistrictList.map((data) => {
                               return (
                                 <option
-                                  value={data.subCatName}
+                                  value={data.districtId}
                                   className={styles.textColor}
                                 >
-                                  "test"
+                                  {data.subDistrictName}
                                 </option>
                               );
                             })}
@@ -313,19 +362,34 @@ export default class detail extends Component {
                             as="select"
                             custom
                             className={styles.textMuted}
-                            disabled
+                            // disabled
+                            onChange={(e) => {
+                              this.setState({
+                                provinceId: e.target.value,
+                              });
+                              console.log(e.target.value);
+                            }}
                           >
-                            <option value="โปรดเลือก">โปรดเลือก</option>
-                            {this.state.subCat.map((data) => {
-                              return (
-                                <option
-                                  value={data.subCatName}
-                                  className={styles.textColor}
-                                >
-                                  "test"
-                                </option>
-                              );
-                            })}
+                            {this.state.districtId !== "" ? (
+                              <>
+                                {this.state.districtList.map((data) => {
+                                  if (
+                                    this.state.districtId === data.districtId
+                                  ) {
+                                    return (
+                                      <option
+                                        value={data.proviceId}
+                                        className={styles.textColor}
+                                      >
+                                        {data.districtName}
+                                      </option>
+                                    );
+                                  }
+                                })}
+                              </>
+                            ) : (
+                              <option value="โปรดเลือก">โปรดเลือก</option>
+                            )}
                           </Form.Control>
                         </Form.Group>
                       </div>
@@ -338,19 +402,24 @@ export default class detail extends Component {
                             as="select"
                             custom
                             className={styles.textMuted}
-                            disabled
+                            // disabled
                           >
-                            <option value="โปรดเลือก">โปรดเลือก</option>
-                            {this.state.subCat.map((data) => {
-                              return (
-                                <option
-                                  value={data.subCatName}
-                                  className={styles.textColor}
-                                >
-                                  "test"
-                                </option>
-                              );
-                            })}
+                            {this.state.districtId !== "" ? (
+                              <>
+                                {this.state.provinceList.map((data) => {
+                                  return (
+                                    <option
+                                      value={data.provinceName}
+                                      className={styles.textColor}
+                                    >
+                                      {data.provinceName}
+                                    </option>
+                                  );
+                                })}
+                              </>
+                            ) : (
+                              <option value="โปรดเลือก">โปรดเลือก</option>
+                            )}
                           </Form.Control>
                         </Form.Group>
                       </div>
@@ -635,12 +704,14 @@ export default class detail extends Component {
                                 type="radio"
                                 id="custom-radio"
                                 label="มีวัน/เดือน/ปีเกิด"
+                                style={{ marginRight: "1rem" }}
                               />
                               <Form.Check
                                 custom
                                 type="radio"
                                 id="custom-radio"
                                 label="มีเฉพาะเดือนและปีเกิด"
+                                style={{ marginRight: "1rem" }}
                               />
                               <Form.Check
                                 custom
@@ -656,7 +727,7 @@ export default class detail extends Component {
                             <Form.Group className="m-lg-0">
                               <Form.Label>ปี:</Form.Label>
                               <Form.Control as="select" custom>
-                                <option>1</option>
+                                <option>โปรดเลือก</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
@@ -668,7 +739,7 @@ export default class detail extends Component {
                             <Form.Group className="m-lg-0">
                               <Form.Label>เดือน:</Form.Label>
                               <Form.Control as="select" custom>
-                                <option>1</option>
+                                <option>โปรดเลือก</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
@@ -680,7 +751,7 @@ export default class detail extends Component {
                             <Form.Group className="m-lg-0">
                               <Form.Label>วัน:</Form.Label>
                               <Form.Control as="select" custom>
-                                <option>1</option>
+                                <option>โปรดเลือก</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>

@@ -39,3 +39,32 @@ LI:before {
   content: counters(item, ".") " ";
   counter-increment: item;
 }
+
+label {
+  color: #2a4365 !important;
+  font-weight: 700 !important;
+}
+
+input {
+  color: #2a4365 !important;
+  font-weight: 700 !important;
+}
+
+/* with the :focus here, we would show grey when not using the element */
+select {
+  color: #2b6db0 !important;
+}
+/* with the :focus here, we show grey when using the element */
+select:focus {
+  color: #2b6db0 !important;
+}
+option:not(:first-of-type) {
+  color: #2b6db0 !important;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2b6db0 !important;
+  font-weight: 700;
+  opacity: 1; /* Firefox */
+}
