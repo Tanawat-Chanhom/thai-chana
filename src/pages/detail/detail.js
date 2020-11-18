@@ -109,7 +109,12 @@ export default class detail extends Component {
             เพื่อใช้ในการประเมินการเปิดให้บริการ
           </p>
         </div>
-        <Form className="ng-untouched ng-pristine ng-invalid">
+        <Form
+          className="ng-untouched ng-pristine ng-invalid"
+          onChange={(e) => {
+            console.log(e.target.value);
+          }}
+        >
           <div className="container">
             <div className="row">
               <div className="col-lg-3">
@@ -345,7 +350,7 @@ export default class detail extends Component {
                             รหัสไปรษณีย์<span className="text-danger"> *</span>
                           </Form.Label>
                           <Form.Control
-                            type="text"
+                            type="number"
                             appvalidation
                             placeholder="รหัสไปรษณีย์"
                             mask="00000"
@@ -868,7 +873,7 @@ export default class detail extends Component {
                         <Form.Group>
                           <Form.Label>E-mail</Form.Label>
                           <Form.Control
-                            type="number"
+                            type="text"
                             appvalidation
                             placeholder="E-mail"
                           />
