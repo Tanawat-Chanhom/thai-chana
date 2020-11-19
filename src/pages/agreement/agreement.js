@@ -170,7 +170,7 @@ export default class agreement extends Component {
                     }}
                   />
                 </div>
-                <a href="/register/detail">
+                <a>
                   <Button
                     variant="primary"
                     className="btn btn-block btn-lg"
@@ -184,9 +184,9 @@ export default class agreement extends Component {
                           confirmButtonText: "ตกลง",
                         });
                       } else {
-                        // this.setState({
-                        //   path: "/register/detail",
-                        // });
+                        this.setState({
+                          path: "/register/detail",
+                        });
                       }
                     }}
                   >
@@ -221,7 +221,7 @@ export default class agreement extends Component {
           className={cx("lead mt-5", styles.textColor)}
           style={{ textAlign: "center" }}
         >
-          Copyright © 2020
+          Cyberpunk © 2077
         </p>
       </div>
     );

@@ -88,7 +88,7 @@ body {
 }
 
 /* STYLE BTN */
-.btn {
+.btnm {
   background: #ccc;
   border-radius: 50px;
   color: #fff;
@@ -98,29 +98,29 @@ body {
   align-items: center;
 }
 
-.btn .name {
+.btnm .name {
   margin-top: 4px;
   text-align: center;
   width: 85%;
 }
 
-.btn.orange {
+.btnm.orange {
   background: #ff5c01;
 }
 
-.btn.blue {
+.btnm.blue {
   background: #0ca7c2;
 }
 
-.btn.dark-blue {
+.btnm.dark-blue {
   background: #2e639d;
 }
 
-.btn.yellow {
+.btnm.yellow {
   background: #f2a100;
 }
 
-.btn:hover {
+.btnm:hover {
   color: #fff;
   -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.5);

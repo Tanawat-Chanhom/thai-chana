@@ -24,8 +24,62 @@ export default class detail extends Component {
       latitude: null,
       longitude: null,
       onlyShow: "day-mounth-year",
+
+      firstName: "",
+      lastName: "",
+      personalId: "",
+      secretId: "",
+      year: "",
+      month: "",
+      day: "",
+      phone: "",
+      eMail: "",
     };
   }
+
+  sendData = () => {
+    let {
+      firstName,
+      lastName,
+      personalId,
+      secretId,
+      year,
+      month,
+      day,
+      phone,
+      eMail,
+    } = this.state;
+    let body = {
+      firstName: firstName,
+      lastName: lastName,
+      personalId: personalId,
+      secretId: secretId,
+      year: year,
+      month: month,
+      day: day,
+      phone: phone,
+      eMail: eMail,
+    };
+    console.log(body);
+    axios
+      .post("https://itlaw.herokuapp.com/user/create", body)
+      .then((res) => {
+        console.log(res);
+        Swal.fire({
+          icon: "error",
+          title: "ข้อมูลบางอย่างไม่ครบถ้วนหรือไม่ถูกต้อง",
+          text: "กรุณาตรวจสอบข้อมูลของท่าน แล้วลองใหม่อีกครั้ง",
+          timer: 2000,
+        }).then(() => {
+          window.location.replace(
+            "https://applied2020.thaichana.com/register/detail"
+          );
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   getLocation = (value) => {
     let body = {
@@ -109,12 +163,7 @@ export default class detail extends Component {
             เพื่อใช้ในการประเมินการเปิดให้บริการ
           </p>
         </div>
-        <Form
-          className="ng-untouched ng-pristine ng-invalid"
-          onChange={(e) => {
-            console.log(e.target.value);
-          }}
-        >
+        <Form className="ng-untouched ng-pristine ng-invalid">
           <div className="container">
             <div className="row">
               <div className="col-lg-3">
@@ -379,16 +428,22 @@ export default class detail extends Component {
                             }}
                           >
                             <option value="โปรดเลือก">โปรดเลือก</option>
-                            {this.state.subDistrictList.map((data) => {
-                              return (
-                                <option
-                                  value={data.districtId}
-                                  className={styles.textColor}
-                                >
-                                  {data.subDistrictName}
-                                </option>
-                              );
-                            })}
+                            {this.state.subDistrictList !== null ? (
+                              <>
+                                {this.state.subDistrictList.map((data) => {
+                                  return (
+                                    <option
+                                      value={data.districtId}
+                                      className={styles.textColor}
+                                    >
+                                      {data.subDistrictName}
+                                    </option>
+                                  );
+                                })}
+                              </>
+                            ) : (
+                              <></>
+                            )}
                           </Form.Control>
                         </Form.Group>
                       </div>
@@ -413,20 +468,27 @@ export default class detail extends Component {
                           >
                             {this.state.districtId !== "" ? (
                               <>
-                                {this.state.districtList.map((data) => {
-                                  if (
-                                    this.state.districtId === data.districtId
-                                  ) {
-                                    return (
-                                      <option
-                                        value={data.proviceId}
-                                        className={styles.textColor}
-                                      >
-                                        {data.districtName}
-                                      </option>
-                                    );
-                                  }
-                                })}
+                                {this.state.districtList !== null ? (
+                                  <>
+                                    {this.state.districtList.map((data) => {
+                                      if (
+                                        this.state.districtId ===
+                                        data.districtId
+                                      ) {
+                                        return (
+                                          <option
+                                            value={data.proviceId}
+                                            className={styles.textColor}
+                                          >
+                                            {data.districtName}
+                                          </option>
+                                        );
+                                      }
+                                    })}
+                                  </>
+                                ) : (
+                                  <></>
+                                )}
                               </>
                             ) : (
                               <option value="โปรดเลือก">โปรดเลือก</option>
@@ -447,16 +509,22 @@ export default class detail extends Component {
                           >
                             {this.state.districtId !== "" ? (
                               <>
-                                {this.state.provinceList.map((data) => {
-                                  return (
-                                    <option
-                                      value={data.provinceName}
-                                      className={styles.textColor}
-                                    >
-                                      {data.provinceName}
-                                    </option>
-                                  );
-                                })}
+                                {this.state.provinceList !== null ? (
+                                  <>
+                                    {this.state.provinceList.map((data) => {
+                                      return (
+                                        <option
+                                          value={data.provinceName}
+                                          className={styles.textColor}
+                                        >
+                                          {data.provinceName}
+                                        </option>
+                                      );
+                                    })}
+                                  </>
+                                ) : (
+                                  <></>
+                                )}
                               </>
                             ) : (
                               <option value="โปรดเลือก">โปรดเลือก</option>
@@ -595,6 +663,12 @@ export default class detail extends Component {
                             type="text"
                             appvalidation
                             placeholder="ชื่อภาษาไทย"
+                            value={this.state.firstName}
+                            onChange={(e) => {
+                              this.setState({
+                                firstName: e.target.value,
+                              });
+                            }}
                           />
                         </Form.Group>
                       </div>
@@ -608,6 +682,12 @@ export default class detail extends Component {
                             type="text"
                             appvalidation
                             placeholder="นามสกุลภาษาไทย"
+                            value={this.state.lastName}
+                            onChange={(e) => {
+                              this.setState({
+                                lastName: e.target.value,
+                              });
+                            }}
                           />
                         </Form.Group>
                       </div>
@@ -624,6 +704,12 @@ export default class detail extends Component {
                               type="text"
                               appvalidation
                               placeholder="เลขประจำตัวประชาชนของผู้ติดต่อ"
+                              value={this.state.personalId}
+                              onChange={(e) => {
+                                this.setState({
+                                  personalId: e.target.value,
+                                });
+                              }}
                             />
                             <InputGroup.Append>
                               <Button variant="outline-secondary">
@@ -721,6 +807,12 @@ export default class detail extends Component {
                                 appvalidation
                                 placeholder="XX0-0000000-00"
                                 mask="AA0-0000000-00"
+                                value={this.state.secretId}
+                                onChange={(e) => {
+                                  this.setState({
+                                    secretId: e.target.value,
+                                  });
+                                }}
                               />
                             </div>
                           </div>
@@ -790,7 +882,16 @@ export default class detail extends Component {
                           <div className="col-lg-4 col-md-12">
                             <Form.Group className="m-lg-0">
                               <Form.Label>ปี:</Form.Label>
-                              <Form.Control as="select" custom>
+                              <Form.Control
+                                as="select"
+                                custom
+                                value={this.state.year}
+                                onChange={(e) => {
+                                  this.setState({
+                                    year: e.target.value,
+                                  });
+                                }}
+                              >
                                 <option>โปรดเลือก</option>
                                 {year.map((data) => {
                                   return <option>{data}</option>;
@@ -803,7 +904,16 @@ export default class detail extends Component {
                               {this.state.onlyShow === "mounth-year" ? (
                                 <>
                                   <Form.Label>เดือน:</Form.Label>
-                                  <Form.Control as="select" custom>
+                                  <Form.Control
+                                    as="select"
+                                    custom
+                                    value={this.state.month}
+                                    onChange={(e) => {
+                                      this.setState({
+                                        month: e.target.value,
+                                      });
+                                    }}
+                                  >
                                     <option>โปรดเลือก</option>
                                     {mounth.map((data) => {
                                       return <option>{data}</option>;
@@ -816,7 +926,16 @@ export default class detail extends Component {
                               {this.state.onlyShow === "day-mounth-year" ? (
                                 <>
                                   <Form.Label>เดือน:</Form.Label>
-                                  <Form.Control as="select" custom>
+                                  <Form.Control
+                                    as="select"
+                                    custom
+                                    value={this.state.month}
+                                    onChange={(e) => {
+                                      this.setState({
+                                        month: e.target.value,
+                                      });
+                                    }}
+                                  >
                                     <option>โปรดเลือก</option>
                                     {mounth.map((data) => {
                                       return <option>{data}</option>;
@@ -833,7 +952,16 @@ export default class detail extends Component {
                               {this.state.onlyShow === "day-mounth-year" ? (
                                 <>
                                   <Form.Label>วัน:</Form.Label>
-                                  <Form.Control as="select" custom>
+                                  <Form.Control
+                                    as="select"
+                                    custom
+                                    value={this.state.day}
+                                    onChange={(e) => {
+                                      this.setState({
+                                        day: e.target.value,
+                                      });
+                                    }}
+                                  >
                                     <option>โปรดเลือก</option>
                                     {day.map((data) => {
                                       return <option>{data}</option>;
@@ -866,6 +994,12 @@ export default class detail extends Component {
                             type="number"
                             appvalidation
                             placeholder="เบอร์โทรศัพท์ที่สามารถติดต่อได้"
+                            value={this.state.phone}
+                            onChange={(e) => {
+                              this.setState({
+                                phone: e.target.value,
+                              });
+                            }}
                           />
                         </Form.Group>
                       </div>
@@ -876,6 +1010,12 @@ export default class detail extends Component {
                             type="text"
                             appvalidation
                             placeholder="E-mail"
+                            value={this.state.eMail}
+                            onChange={(e) => {
+                              this.setState({
+                                eMail: e.target.value,
+                              });
+                            }}
                           />
                         </Form.Group>
                       </div>
@@ -893,9 +1033,7 @@ export default class detail extends Component {
                       variant=" btn-primary"
                       className="btn mx-2"
                       onClick={() => {
-                        window.location.replace(
-                          "https://applied2020.thaichana.com/register/detail"
-                        );
+                        this.sendData();
                       }}
                     >
                       ดำเนินการต่อ
@@ -909,7 +1047,7 @@ export default class detail extends Component {
         </Form>
         <footer _ngcontent-jdy-c35="" class={cx("mb-4", styles.copy)}>
           <p _ngcontent-jdy-c35="" class="lead text-center text-muted">
-            Copyright © 2020
+            Cyberpunk © 2077
           </p>
         </footer>
       </div>

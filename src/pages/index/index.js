@@ -36,7 +36,7 @@ export default class index extends Component {
               <div className="col-lg-6 col-md-12 col-sm-12 mt-3">
                 <a
                   id="btn-top-find"
-                  className="btn yellow"
+                  className="btnm yellow"
                   href="https://merchant.thaichana.com"
                   target="_blank"
                 >
@@ -47,7 +47,7 @@ export default class index extends Component {
               <div className="col-lg-6 col-md-12 col-sm-12 mt-3">
                 <a
                   id="btn-top-register"
-                  className="btn orange"
+                  className="btnm orange"
                   href="/register/terms-conditions"
                   target="_blank"
                 >
@@ -59,7 +59,7 @@ export default class index extends Component {
               <div className="col-lg-6 col-md-12 col-sm-12 mt-3">
                 <a
                   id="btn-top-manage-info"
-                  className="btn blue"
+                  className="btnm blue"
                   href="https://portal.thaichana.com/sjtc-front/"
                   target="_top"
                 >
@@ -95,7 +95,7 @@ export default class index extends Component {
                         </h2>
                         <a
                           id="btn-download-manual"
-                          className="btn dark-blue mt-4"
+                          className="btnm dark-blue mt-4"
                           href="http://www.ไทยชนะ.com/manual/คู่มือสำหรับผู้ประกอบการลงทะเบียน%20และวิธีการสแกน%20QR.pdf"
                           target="_blank"
                         >
@@ -132,7 +132,7 @@ export default class index extends Component {
                   <h1 className="text-center mb-3">คำถามที่พบบ่อย</h1>
                   <a
                     id="btn-faq"
-                    className="btn blue"
+                    className="btnm blue"
                     href="faq.html"
                     target="_top"
                   >
