@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "KrungthaiFast-Regular";
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* STYLE LINK */
+:hover,
+:visited,
+:focus {
+  text-decoration: none !important;
+}
+
+/* COLOR */
+.blue {
+  color: #2e639d;
+}
+
+.orange {
+  color: #f29945;
+}
+
+.white {
+  color: #fff;
+}
+
+/* STYLE FONT */
+.light {
+  font-family: "KrungthaiFast-Light";
+}
+
+.bold {
+  font-family: "KrungthaiFast-Bold";
+}
+
+.italic {
+  font-family: "KrungthaiFast-Italic";
+}
+
+.bold.italic {
+  font-family: "KrungthaiFast-BoldItalic";
+}
+
+/* ALIGN OBJECT */
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* ARROW */
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+}
+
+/* BORDER CONTAINER */
+.border-container {
+  position: relative;
+}
+
+.border-container:before {
+  content: "";
+  background: #fff;
+  border: solid 2px #95d4d1 !important;
+  border-radius: 20px;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 10rem);
+}
+
+.border-container > div {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* STYLE BTN */
+.btn {
+  background: #ccc;
+  border-radius: 50px;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn .name {
+  margin-top: 4px;
+  text-align: center;
+  width: 85%;
+}
+
+.btn.orange {
+  background: #ff5c01;
+}
+
+.btn.blue {
+  background: #0ca7c2;
+}
+
+.btn.dark-blue {
+  background: #2e639d;
+}
+
+.btn.yellow {
+  background: #f2a100;
+}
+
+.btn:hover {
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* ARRCODIAN STYLE */
+.list-group-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-group-item span {
+  margin-right: 1rem;
+  height: 30px;
+}
+
+/* .list-group-item .ic-shop {
+  background: url("../images/ic-shop.png") no-repeat center center;
+  background-size: contain;
+  width: 40px;
+}
+
+.list-group-item.active .ic-shop {
+  background: url("../images/ic-shop-active.png") no-repeat center center;
+  background-size: contain;
+  width: 40px;
+}
+
+.list-group-item .ic-people {
+  background: url("../images/ic-people.png") no-repeat center center;
+  background-size: contain;
+  width: 40px;
+}
+
+.list-group-item.active .ic-people {
+  background: url("../images/ic-people-active.png") no-repeat center center;
+  background-size: contain;
+  width: 40px;
+} */
+
+.list-group-item.active {
+  background-color: #006838;
+  border-color: #006838;
+  color: #fff;
+}
+
+.list-group-item-action {
+  color: #006838;
+}
+
+.card {
+  border: 0;
+  background: transparent;
+}
+
+.card .btn {
+  position: relative;
+}
+
+.btn .arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transition: all 0.35s 0.1s;
+  transform: rotate(0);
+}
+
+.btn:hover .arrow {
+  transform: rotate(-180deg);
+}
+
+.card:first-of-type {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-header {
+  padding: 0;
+  background-color: transparent;
+}
+
+.card-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion .btn {
+  padding: 1.2rem 0;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  background: none;
+  color: #2e639d;
+  text-align: left;
+}
+
+.accordion .btn:hover {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* WRAP TOP */
+#wrap-top {
+  background: #05773b;
+}
+
+#wrap-top .logo-container {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+#wrap-top .logo-container .row > .col-auto {
+  padding-right: 0;
+}
+
+#wrap-top .btn {
+  margin: 0 auto;
+  font-size: 1.4rem;
+  width: 80%;
+}
+
+#wrap-top .btn-container .row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* WRAP FOOTER */
+#wrap-footer.green {
+  background: #05773b;
+  color: #fff;
+}

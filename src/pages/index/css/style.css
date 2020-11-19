@@ -1,0 +1,118 @@
+/* WRAP PLATFORM */
+#wrap-platform {
+    background: #EDEDED;
+}
+
+#wrap-platform .icon-container {
+    margin-top: 1.5rem;
+    display: flex;
+    color: #2D639E;
+}
+
+#wrap-platform .icon-container .icon {
+    margin-right: 20px;
+}
+
+#wrap-platform .icon-container .icon img {
+    width: 70px;
+}
+
+#wrap-platform .icon-container .desc .head {
+    font-size: 20px;
+}
+
+#wrap-platform .icon-container .desc .detail {
+    font-size: 15px;
+}
+
+#wrap-platform .img-mobile {
+    margin-top: 3rem;
+    position: relative;
+}
+
+#wrap-platform .img-mobile:after {
+    content: '';
+    border-radius: 30px;
+    -webkit-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.15);
+    box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: calc(100% - 14px);
+    height: 100%;
+}
+
+/* HOME-PAGE */
+#home-page .download-container {
+    color: #2E639D;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page .download-container h1 {
+    font-family: "KrungthaiFast-Bold";
+    font-size: 3rem;
+}
+
+#home-page .download-container h2 {
+    font-family: "KrungthaiFast-Light";
+    font-size: 1.6rem;
+}
+
+#home-page .download-container .btn {
+    font-size: 1.2rem;
+}
+
+/* WRAP CONTENT */
+#wrap-content {
+    background: #fff;
+}
+
+#wrap-content .img-content img {
+    border-radius: 30px;
+}
+
+/* WRAP FAQ */
+#wrap-faq {
+    background: #05773b;
+}
+
+#wrap-faq h1 {
+    color: #fff;
+}
+
+#wrap-faq .btn {
+    height: initial;
+    background: #fff;
+    color: #056639;
+}
+
+#wrap-faq .btn .name {
+    font-size: 20px;
+}
+
+#wrap-faq .btn .arrow-right {
+    border-left-color: #056639;
+}
+
+/* FAQ-PAGE */
+.section {
+    padding: 3rem 0;
+}
+
+.section:nth-of-type(2) {
+    background: #EDECED;
+}
+
+.list-group-horizontal {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#wrap-faq-info .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}

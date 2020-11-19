@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styles from "./agreement.module.css";
 import cx from "classnames";
-import { Form, Container, Row, Col, Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet";
